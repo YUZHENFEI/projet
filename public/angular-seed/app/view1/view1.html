@@ -1,0 +1,10 @@
+<p>Search student from students list</p>
+Search: <input ng-model="$ctrl.query" />
+
+<ul>
+   <li ng-repeat="student in students | filter:$ctrl.query">
+     <span>{{student.name}}</span>
+     <p>{{student.surname}}</p>
+      <p>{{student.birthday}}</p>
+   </li>
+ </ul>
