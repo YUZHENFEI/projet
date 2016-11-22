@@ -1,7 +1,7 @@
 class City < ActiveRecord::Base
   before_validation :geocode
   
-  public
+	public
 
   def forecast_io
     forecast = ForecastIO.forecast(self.lat, self.lon, params: { units: 'si' })
