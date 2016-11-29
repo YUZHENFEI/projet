@@ -34,7 +34,7 @@ end
 
 # geocoding 
 gem 'nominatim', '~> 0.0.5'
-
+gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
 
 
 gem 'pg', '~> 0.18.4', group: :production

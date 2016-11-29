@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+get '/auth/github/callback', to: 'session#create'
   resources :cities
 
   resources :students
